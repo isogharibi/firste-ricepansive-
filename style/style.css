@@ -1,0 +1,177 @@
+:root {
+    --white: #fff;
+    --them: #5E00D6;
+    --bg: #161616;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--bg);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    color: var(--white);
+}
+
+hr {
+    width: 39px;
+    height: 5px;
+    background-color: var(--them);
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.header-txt {
+    color: var(--white);
+    font-size: 13.5px;
+}
+
+.log {
+    width: 42px;
+}
+
+.human {
+    width: 300px;
+}
+
+.m-c {
+    border-radius: 9px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 15px;
+    background-color: var(--them);
+    color: var(--white);
+    display: block;
+    font-family: 'Rubik', sans-serif;
+}
+
+.txt {
+    color: var(--them);
+    font-weight: 500;
+    font-weight: 600;
+}
+
+p {
+    border-left: 1.5px solid var(--them);
+    margin-top: 21px;
+    padding-left: 6px;
+    font-size: 12px;
+    color: #606060;
+}
+
+.pekan {
+    margin-top: 30px;
+    width: 38px;
+    margin-left: 140px;
+    animation-iteration-count: infinite;
+    animation-name: pekan;
+    animation-duration: 1s;
+}
+
+ul {
+    display: none;
+}
+.btn {
+    display: none;
+}
+
+@keyframes pekan {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .pekan {
+        display: none;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+    }
+
+    .menuo {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: 300px;
+        justify-content: space-between;
+        color: var(--white);
+    }
+
+    .btn {
+        display: flex;
+        width: 130px;
+    }
+
+    .phone {
+        align-items: center;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .human {
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    .hero-txt {
+        margin-top: 120px;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+
+    .header-txt {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .m-c {
+        margin-top: 25px;
+    }
+}
